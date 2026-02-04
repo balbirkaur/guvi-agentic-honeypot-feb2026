@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()   # MUST be first
 from fastapi import FastAPI, Depends
 from auth import verify_api_key
 from models import RequestPayload, AgentResponse
